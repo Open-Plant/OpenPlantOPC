@@ -1,0 +1,19 @@
+C:\My\Open-Plant Suite\dll\OPC Classic\OpcNetApi.Com.dll
+C:\My\Open-Plant Suite\dll\OPC Classic\OpcNetApi.Com.pdb
+C:\My\Open-Plant Suite\Connector\OPCDA\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\Connector\OPCDA\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\Connector\OPCDA\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csproj.CopyComplete
+C:\My\Open-Plant Suite\Connector\OPCDA\COM Wrapper\obj\Debug\OpcNetApi.Com.dll
+C:\My\Open-Plant Suite\Connector\OPCDA\COM Wrapper\obj\Debug\OpcNetApi.Com.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\bin\Debug\OpcNetApi.Com.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\bin\Debug\OpcNetApi.Com.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\bin\Debug\OpcComRcw.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\bin\Debug\OpcNetApi.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\bin\Debug\OpcNetApi.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\bin\Debug\OpcComRcw.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\bin\Debug\fr\OpcNetApi.resources.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csproj.CopyComplete
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OpcNetApi.Com.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OpcNetApi.Com.pdb

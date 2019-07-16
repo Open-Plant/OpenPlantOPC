@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98B6E5A1-6FED-434E-B568-9C68D5F9959C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OpcNetApi</AssemblyName>
+    <AssemblyOriginatorKeyFile>OPC Key Pair.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Opc</RootNamespace>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\OpcNetApi.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ae\Opc.Ae.Attribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ae\Opc.Ae.BrowseElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ae\Opc.Ae.Category.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ae\Opc.Ae.Condition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ae\Opc.Ae.IServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ae\Opc.Ae.ISubscription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ae\Opc.Ae.ItemUrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ae\Opc.Ae.Server.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ae\Opc.Ae.Subscription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cpx\BinaryReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cpx\BinaryStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cpx\BinaryWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cpx\ComplexItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cpx\OPCBinary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Da\Opc.Da.Browse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Da\Opc.Da.IServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Da\Opc.Da.ISubscription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Da\Opc.Da.Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Da\Opc.Da.PropertyID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Da\Opc.Da.Quality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Da\Opc.Da.Server.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Da\Opc.Da.Subscription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dx\Opc.Dx.DXConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dx\Opc.Dx.DXConnectionQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dx\Opc.Dx.GeneralResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dx\Opc.Dx.IServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dx\Opc.Dx.ItemIdentifer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dx\Opc.Dx.Server.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dx\Opc.Dx.SourceServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.Aggregate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.Annotation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.Attribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.IBrowser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.IServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.Server.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.Time.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hda\Opc.Hda.Trend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.Collections.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.ConnectData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.Convert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.Factory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.IDiscovery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.IServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.ItemIdentifer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.Namespace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.ResultID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.Server.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opc.Type.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Cpx\OPCBinary.xsd">
+      <SubType>
+      </SubType>
+    </Content>
+    <None Include="Cpx\OPCBinary.xsx">
+      <DependentUpon>OPCBinary.xsd</DependentUpon>
+    </None>
+    <None Include="OPC Key Pair.snk" />
+    <EmbeddedResource Include="Resources\Strings.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

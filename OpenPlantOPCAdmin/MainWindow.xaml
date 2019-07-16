@@ -1,0 +1,111 @@
+﻿<Window x:Class="OpenPlantOPC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:OpenPlantOPC="clr-namespace:OpenPlantOPC;assembly=OpenPlantOPC.WPF"
+        xmlns:OPLibWPF="clr-namespace:OpenPlant;assembly=OPCoreLibWPF"
+        xmlns:local="clr-namespace:OpenPlantOPC" Title="Open-Plant OPC" Closed="Window_Closed"
+        mc:Ignorable="d" Icon="Icons\OpenPlant.ico" Loaded="Window_Loaded"
+        Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary >
+            <OPLibWPF:CentreMessageStateNoMessageToOpacity1Else02Converter x:Key="CentreMessageStateNoMessageToOpacity1Else02Converter" />
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <OPLibWPF:OPH2 VerticalAlignment="Center"  HorizontalAlignment="Center">Disconnected from Open-Plant OPC Service</OPLibWPF:OPH2>
+        <Grid x:Name="gdOpenPlantOPC">
+            <TabControl SelectionChanged="TabControl_SelectionChanged">
+                <TabItem Header="Activity Logs">
+                    <OPLibWPF:ucLogConsole x:Name="LogConsole"></OPLibWPF:ucLogConsole>
+                </TabItem>
+                <TabItem Header="Settings" x:Name="tiSettings">
+                    <TabItem.DataContext>
+                        <local:SettingsVM />
+                    </TabItem.DataContext>
+                    <Grid>
+                        <Grid Opacity="{Binding ElementName=cmSettings, Path=State, Converter={StaticResource CentreMessageStateNoMessageToOpacity1Else02Converter}}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <OPLibWPF:OPBorder Margin="3" Grid.Row="0" Grid.Column="0">
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <OPLibWPF:OPH3 HorizontalAlignment="Center" Margin="0,0,0,2" Grid.Row="0" FontWeight="Bold">HTTP API</OPLibWPF:OPH3>
+                                    <StackPanel Grid.Row="1" Height="25" Orientation="Horizontal">
+                                        <TextBlock VerticalAlignment="Center" Margin="0,0,0,0">Port:</TextBlock>
+                                        <TextBox IsEnabled="{Binding EnableAPI_Http}" Text="{Binding Http_Port}" VerticalAlignment="Center" Margin="2,0,0,0" Width="80"></TextBox>
+                                        <CheckBox IsChecked="{Binding EnableAPI_Http}" VerticalAlignment="Center" Margin="10,0,0,0">
+                                            <TextBlock Margin="0,1,0,0">Enable</TextBlock>
+                                        </CheckBox>
+                                    </StackPanel>
+                                </StackPanel>
+                            </OPLibWPF:OPBorder>
+                            <OPLibWPF:OPBorder Margin="3" Grid.Row="0" Grid.RowSpan="2"  Grid.Column="1">
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <OPLibWPF:OPH3 HorizontalAlignment="Center" Margin="0,0,0,2" Grid.Row="0" FontWeight="Bold">HTTPS SECURE API</OPLibWPF:OPH3>
+                                    <StackPanel Height="25" HorizontalAlignment="Center" Orientation="Horizontal">
+                                        <TextBlock VerticalAlignment="Center" Margin="0,0,0,0">Port:</TextBlock>
+                                        <TextBox IsEnabled="{Binding EnableAPI_Https}" Text="{Binding Https_Port}" VerticalAlignment="Center" Margin="2,0,0,0" Width="80"></TextBox>
+                                        <CheckBox IsChecked="{Binding EnableAPI_Https}" VerticalAlignment="Center" Margin="10,0,0,0">
+                                            <TextBlock Margin="0,1,0,0">Enable</TextBlock>
+                                        </CheckBox>
+                                    </StackPanel>
+                                    <TextBlock VerticalAlignment="Center" Margin="0,10,0,0">Subject Alternative Names (for SSL Cert)</TextBlock>
+                                    <TextBox IsEnabled="{Binding EnableAPI_Https}" Text="{Binding SubjectAlternativeNames_ForHTTPSCert}" VerticalAlignment="Center" Margin="0,2,0,10"></TextBox>
+                                    <OPLibWPF:OPBorder IsEnabled="{Binding EnableAPI_Https}" Margin="0,5,0,0" Width="195">
+                                        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="10,20,10,20">
+                                            <CheckBox IsChecked="{Binding RequireAPIBasicAuthentication}" VerticalAlignment="Center" Margin="0,0,0,10">
+                                                <TextBlock Margin="0,1,0,0">Enable Basic Authentication</TextBlock>
+                                            </CheckBox>
+                                            <StackPanel Orientation="Horizontal" Height="20">
+                                                <TextBlock Width="60" TextAlignment="Right" Margin="0,0,2,0" >Username:</TextBlock>
+                                                <TextBox IsEnabled="{Binding RequireAPIBasicAuthentication}" Width="100" Text="{Binding Username_ForAPIBasicAuthentication}"></TextBox>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0" Height="20">
+                                                <TextBlock Width="60" TextAlignment="Right" Margin="0,0,2,0" >Password:</TextBlock>
+                                                <PasswordBox IsEnabled="{Binding RequireAPIBasicAuthentication}" x:Name="pbHTTPSAuthentication" Width="100"></PasswordBox>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </OPLibWPF:OPBorder>
+                                </StackPanel>
+                            </OPLibWPF:OPBorder>
+                            <OPLibWPF:OPBorder Margin="3" Grid.Row="1" Grid.Column="0">
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <OPLibWPF:OPH3 HorizontalAlignment="Center" Grid.Row="0" Margin="0,0,0,2" FontWeight="Bold">OPC Settings</OPLibWPF:OPH3>
+                                    <StackPanel Height="22" Orientation="Horizontal">
+                                        <TextBlock VerticalAlignment="Center" TextAlignment="Right" Width="200" Margin="0,0,0,0">OPC Classic Subscription Size Limit:</TextBlock>
+                                        <TextBox VerticalAlignment="Center" Text="{Binding OPCClassic_SubscriptionGroupSizeLimit}" Margin="2,0,0,0" Width="80"></TextBox>
+                                    </StackPanel>
+                                    <StackPanel Height="22" Orientation="Horizontal">
+                                        <TextBlock VerticalAlignment="Center" TextAlignment="Right" Width="200" Margin="0,0,0,0">OPC UA Subscription Size Limit:</TextBlock>
+                                        <TextBox VerticalAlignment="Center" Text="{Binding OPCUA_SubscriptionGroupSizeLimit}" Margin="2,0,0,0" Width="80"></TextBox>
+                                    </StackPanel>
+                                </StackPanel>
+                            </OPLibWPF:OPBorder>
+                            <OPLibWPF:OPBorder Margin="3" Height="45" Grid.Row="2" Grid.ColumnSpan="2">
+                                <OPLibWPF:OPButton Margin="5" Height="auto" Click="oPBSettings_Save_Click">Save and Apply</OPLibWPF:OPButton>
+                            </OPLibWPF:OPBorder>
+                        </Grid>
+                       <!--<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">sdsadasd</TextBlock>-->
+                        <OPLibWPF:CentreMessage Visibility="Visible" x:Name="cmSettings" MessageProcess="Saving..." MessageSuccess="Save Successful!" ShowDesignTimeMessageProcess="False" />
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Test Browse OPC UA">
+                    <OpenPlantOPC:OPCBrowser  OPCBrowserType="OPCUA" x:Name="OPCUA_Browser" BorderThickness="1" BorderBrush="#ccc" ShowAddedCount="True" AllowAddConnection="True" 
+                                ShowCheckBoxes="True" ShowCancelButton="False" OKClick="OPC_Browser_OKClick" EnableBulkSelectionMode="True" BrowseForOPCServersOnly="False" />
+                </TabItem>
+                <TabItem Header="Test Browse OPC Classic">
+                    <OpenPlantOPC:OPCBrowser  OPCBrowserType="OPCClassic" x:Name="OPCClassic_Browser" BorderThickness="1" BorderBrush="#ccc" ShowAddedCount="True" AllowAddConnection="True" 
+                                ShowCheckBoxes="True" ShowCancelButton="False" OKClick="OPC_Browser_OKClick" EnableBulkSelectionMode="True" BrowseForOPCServersOnly="False" />
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Grid>
+</Window>

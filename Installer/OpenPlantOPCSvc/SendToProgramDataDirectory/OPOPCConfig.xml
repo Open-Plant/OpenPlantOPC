@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OPCBackEndConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EnableAPI_Https>false</EnableAPI_Https>
+  <Https_Port>33190</Https_Port>
+  <EnableAPI_Http>true</EnableAPI_Http>
+  <Http_Port>33191</Http_Port>
+  <RequireAPIBasicAuthentication>false</RequireAPIBasicAuthentication>
+  <SubjectAlternativeNames_ForHTTPSCert>localhost,127.0.0.1</SubjectAlternativeNames_ForHTTPSCert>
+  <Username_ForAPIBasicAuthentication />
+  <Password_ForAPIBasicAuthentication />
+  <PipeName>OpenPlantOPC</PipeName>
+</OPCBackEndConfig>

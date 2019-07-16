@@ -1,0 +1,22 @@
+C:\My\Open-Plant Suite\dll\OPC Classic\OpcNetApi.Xml.dll
+C:\My\Open-Plant Suite\dll\OPC Classic\OpcNetApi.Xml.pdb
+C:\My\Open-Plant Suite\dll\OPC Classic\fr\OpcNetApi.Xml.resources.dll
+C:\My\Open-Plant Suite\Connector\OPCDA\XML Wrapper\obj\Debug\OPC NET XML Wrapper.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\Connector\OPCDA\XML Wrapper\obj\Debug\OpcXml.Resources.Strings.resources
+C:\My\Open-Plant Suite\Connector\OPCDA\XML Wrapper\obj\Debug\OpcXml.Resources.Strings.fr.resources
+C:\My\Open-Plant Suite\Connector\OPCDA\XML Wrapper\obj\Debug\OPC NET XML Wrapper.csproj.GenerateResource.cache
+C:\My\Open-Plant Suite\Connector\OPCDA\XML Wrapper\obj\Debug\OPC NET XML Wrapper.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\Connector\OPCDA\XML Wrapper\obj\Debug\fr\OpcNetApi.Xml.resources.dll
+C:\My\Open-Plant Suite\Connector\OPCDA\XML Wrapper\obj\Debug\OpcNetApi.Xml.dll
+C:\My\Open-Plant Suite\Connector\OPCDA\XML Wrapper\obj\Debug\OpcNetApi.Xml.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\bin\Debug\OpcNetApi.Xml.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\bin\Debug\OpcNetApi.Xml.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\bin\Debug\fr\OpcNetApi.Xml.resources.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\obj\Debug\OPC NET XML Wrapper.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\obj\Debug\OpcXml.Resources.Strings.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\obj\Debug\OpcXml.Resources.Strings.fr.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\obj\Debug\OPC NET XML Wrapper.csproj.GenerateResource.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\obj\Debug\OPC NET XML Wrapper.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\obj\Debug\fr\OpcNetApi.Xml.resources.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\obj\Debug\OpcNetApi.Xml.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\XML Wrapper\obj\Debug\OpcNetApi.Xml.pdb

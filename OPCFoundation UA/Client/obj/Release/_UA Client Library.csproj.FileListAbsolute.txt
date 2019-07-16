@@ -1,0 +1,22 @@
+C:\Users\azrin\OneDrive\Open-Plant Suite\bin\Release\Opc.Ua.Client.XML
+C:\Users\azrin\OneDrive\Open-Plant Suite\bin\Release\Opc.Ua.Client.dll
+C:\Users\azrin\OneDrive\Open-Plant Suite\bin\Release\Opc.Ua.Client.pdb
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries OP\Client\obj\Release\_UA Client Library.csprojResolveAssemblyReference.cache
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries OP\Client\obj\Release\Opc.Ua.Client.dll
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries OP\Client\obj\Release\Opc.Ua.Client.pdb
+C:\My\Open-Plant Suite\bin\Release\Opc.Ua.Client.XML
+C:\My\Open-Plant Suite\bin\Release\Opc.Ua.Client.dll
+C:\My\Open-Plant Suite\bin\Release\Opc.Ua.Client.pdb
+C:\My\Open-Plant Suite\UA Libraries OP\Client\obj\Release\_UA Client Library.csprojResolveAssemblyReference.cache
+C:\My\Open-Plant Suite\UA Libraries OP\Client\obj\Release\_UA Client Library.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\UA Libraries OP\Client\obj\Release\Opc.Ua.Client.dll
+C:\My\Open-Plant Suite\UA Libraries OP\Client\obj\Release\Opc.Ua.Client.pdb
+C:\My\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.Client.XML
+C:\My\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.Client.dll
+C:\My\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.Client.pdb
+C:\My\Open-Plant Suite\UA Libraries OP\Client\obj\Release\_UA Client Library.csproj.CopyComplete
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Client\obj\Release\_UA Client Library.csprojResolveAssemblyReference.cache
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Client\obj\Release\_UA Client Library.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Client\obj\Release\_UA Client Library.csproj.CopyComplete
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Client\obj\Release\Opc.Ua.Client.dll
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Client\obj\Release\Opc.Ua.Client.pdb

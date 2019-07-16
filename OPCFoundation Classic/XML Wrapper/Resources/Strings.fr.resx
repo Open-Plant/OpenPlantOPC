@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+<data name="E_FAIL">
+	<value>Erreur non specifiee.</value>
+</data>
+<data name="E_OUTOFMEMORY">
+	<value>Depassement des capacites memoire.</value>
+</data>
+<data name="E_SERVERSTATE">
+	<value>L'operation ne peut pas etre execute a cause d'un etat anormal dans
+le serveur. </value>
+</data>
+<data name="E_TIMEDOUT">
+	<value>L'operation a pris trop longtemps pour s'executer. (Selon le
+serveur)</value>
+</data>
+<data name="E_BUSY">
+	<value>Le serveur traite d'autres demandes de rafraichissement, pour un ou
+plusieurs autres abonnement.</value>
+</data>
+<data name="E_NOSUBSCRIPTION">
+	<value>Aucun n? d'abonnement n'est specificie dans la requete.</value>
+</data>
+<data name="E_INVALIDHOLDTIME">
+	<value>Le temps d'attente est trop long (Selon le serveur). </value>
+</data>
+<data name="E_INVALIDCONTINUATIONPOINT">
+	<value>Les points de suite ne sont pas valides. </value>
+</data>
+<data name="E_INVALIDFILTER">
+	<value>Le filtre est invalide. </value>
+</data>
+<data name="E_UNKNOWN_ITEM_NAME">
+	<value>Le nom de l'item n'est pas valide dans l'espace d'adressage du
+serveur. </value>
+</data>
+<data name="E_INVALID_ITEM_NAME">
+	<value>Le nom de l'item ne respecte pas la syntaxe du serveur.</value>
+</data>
+<data name="E_UNKNOWN_ITEM_PATH">
+	<value>Le chemin d'acces de l'item n'est pas valide dans l'espace d'adressage du serveur.</value>
+</data>
+<data name="E_INVALID_ITEM_PATH">
+	<value>Le chemin d'acces de l'item ne respecte pas la syntaxe du serveur.</value>
+</data>
+<data name="E_BADTYPE">
+	<value>Le serveur ne peut pas convertir les donnees entre le type requit et le type canonique.</value>
+</data>
+<data name="E_RANGE">
+	<value>La valeur est en dehors des plages.</value>
+</data>
+<data name="E_READONLY">
+	<value>La valeur est en lecture seule.</value>
+</data>
+<data name="E_WRITEONLY">
+	<value>La valeur est en ecriture seule.</value>
+</data>
+<data name="E_NOTSUPPORTED">
+	<value>Le serveur ne supporte pas l'ecriture de la qualite et/ou de l'horodate.</value>
+</data>
+<data name="E_INVALID_PID">
+	<value>L'identificateur de propriete n'est pas valide pour cet item.</value>
+</data>
+<data name="S_CLAMP">
+	<value>La demande d'ecriture a ete accepte mais la valeur de sortie a ete ajuste.</value>
+</data>
+<data name="S_UNSUPPORTEDRATE">
+	<value>Le serveur ne supporte pas la frequence demande, la valeur compatible la plus proche sera utilisee.</value>
+</data>
+<data name="S_DATAQUEUEOVERFLOW">
+	<value>Tous les changements d'etat n'ont pas ete retourne depuis que le tampon du serveur a ete sature, les donnees les plus vielles ont ete purge.</value>
+</data>
+</root>

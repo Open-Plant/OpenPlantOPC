@@ -1,0 +1,28 @@
+C:\Users\azrin\OneDrive\Open-Plant Suite\bin\Release\Opc.Ua.Configuration.XML
+C:\Users\azrin\OneDrive\Open-Plant Suite\bin\Release\Opc.Ua.Configuration.dll
+C:\Users\azrin\OneDrive\Open-Plant Suite\bin\Release\Opc.Ua.Configuration.pdb
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csprojResolveAssemblyReference.cache
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.ExceptionDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csproj.GenerateResource.Cache
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.dll
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.pdb
+C:\My\Open-Plant Suite\bin\Release\Opc.Ua.Configuration.XML
+C:\My\Open-Plant Suite\bin\Release\Opc.Ua.Configuration.dll
+C:\My\Open-Plant Suite\bin\Release\Opc.Ua.Configuration.pdb
+C:\My\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csprojResolveAssemblyReference.cache
+C:\My\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.ExceptionDlg.resources
+C:\My\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csproj.GenerateResource.Cache
+C:\My\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.dll
+C:\My\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.pdb
+C:\My\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.Configuration.XML
+C:\My\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.Configuration.dll
+C:\My\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.Configuration.pdb
+C:\My\Open-Plant Suite\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csproj.CopyComplete
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csprojResolveAssemblyReference.cache
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.ExceptionDlg.resources
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csproj.GenerateResource.cache
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Configuration\obj\Release\_UA Configuration Library.csproj.CopyComplete
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.dll
+C:\My\Open-Plant Suite\Sampler\UA Libraries OP\Configuration\obj\Release\Opc.Ua.Configuration.pdb

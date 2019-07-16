@@ -1,0 +1,8 @@
+﻿<Application x:Class="OpenPlantOPC.FrontEnd.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="pack://application:,,,/OPCoreLibWPF;component/Styles/Open-Plant.xaml" />
+    </Application.Resources>
+</Application>

@@ -1,0 +1,299 @@
+C:\Users\azrin\OneDrive\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.ClientControls.dll
+C:\Users\azrin\OneDrive\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.ClientControls.pdb
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\_UA Client Controls.csprojResolveAssemblyReference.cache
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseTreeCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodesDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ClientUtils.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.AttributesListViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseNodeCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseTreeViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CallRequestDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CallRequestListViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ConnectServerCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditAnnotationDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditComplexValue2Dlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.Common.EditComplexValueCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditComplexValueDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditMonitoredItemDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditReadValueIdDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditSubscriptionDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditValue2Ctrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditWriteValueDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EventFilterListViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EventListViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.GdsDiscoverServersDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryDataDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryDataListView.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryEventCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ReadRequestDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ReadRequestListViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectLocaleDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodeCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodeDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SetFilterOperatorDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SetTypeDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeDataDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeDataListViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeEventsDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.TypeFieldsListViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.UserNamePasswordDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewEventDetailsDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.WriteRequestDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.WriteRequestListViewCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerOnNetworkListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerOnNetworkListDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectHostCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerListDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HostListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HostListDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.GuiUtils.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditArrayDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoverServerDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditDataValueCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditDataValueDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditValueCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EventListView.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ReferenceListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewNodeStateDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BaseListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BaseTreeCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ComplexValueEditDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DataListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DateTimeValueEditDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeIdCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeIdValueEditDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.NumericValueEditDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ReferenceTypeCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SimpleValueEditDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.StringValueEditDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateListDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreTreeCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreTreeDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectUrlsCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectProfileDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectProfileCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectCertificateStoreCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectFileCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewCertificateDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.YesNoDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerListDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EndpointSelectorCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerListCtrl.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerListDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.UsernameTokenDlg.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.Properties.Resources.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Server.Controls.ClientHeaderBranding.resources
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\_UA Client Controls.csproj.GenerateResource.Cache
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.ClientControls.dll
+C:\Users\azrin\OneDrive\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.ClientControls.pdb
+C:\My\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.ClientControls.dll
+C:\My\Open-Plant Suite\dll\Open-Plant\OPCUACorLib\32Bit .NET 4.0\Opc.Ua.ClientControls.pdb
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\_UA Client Controls.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.AttributeListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseTreeCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodesDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ClientUtils.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.AttributesListViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseNodeCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseTreeViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CallRequestDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CallRequestListViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ConnectServerCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditAnnotationDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditComplexValue2Dlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.Common.EditComplexValueCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditComplexValueDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditMonitoredItemDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditReadValueIdDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditSubscriptionDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditValue2Ctrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditWriteValueDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EventFilterListViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EventListViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.GdsDiscoverServersDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryDataDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryDataListView.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryEventCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ReadRequestDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ReadRequestListViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectLocaleDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodeCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodeDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SetFilterOperatorDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SetTypeDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeDataDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeDataListViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeEventsDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.TypeFieldsListViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.UserNamePasswordDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewEventDetailsDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.WriteRequestDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.WriteRequestListViewCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerOnNetworkListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerOnNetworkListDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectHostCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerListDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HostListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.HostListDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.GuiUtils.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditArrayDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoverServerDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditDataValueCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditDataValueDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EditValueCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EventListView.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ReferenceListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewNodeStateDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BaseListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.BaseTreeCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ComplexValueEditDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DataListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.DateTimeValueEditDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeIdCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeIdValueEditDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.NumericValueEditDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ReferenceTypeCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SimpleValueEditDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.StringValueEditDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateListDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreTreeCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreTreeDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectUrlsCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectProfileDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectProfileCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectCertificateStoreCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectFileCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewCertificateDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.YesNoDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerListDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.EndpointSelectorCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerListCtrl.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerListDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.UsernameTokenDlg.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Client.Controls.Properties.Resources.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.Server.Controls.ClientHeaderBranding.resources
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\_UA Client Controls.csproj.GenerateResource.cache
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\_UA Client Controls.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\_UA Client Controls.csproj.CopyComplete
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.ClientControls.dll
+C:\My\Open-Plant Suite\UA Libraries ORI\Controls\obj\Debug\Opc.Ua.ClientControls.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\_UA Client Controls.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.AttributeListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseTreeCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodesDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ClientUtils.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.AttributesListViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseNodeCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.BrowseTreeViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CallRequestDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CallRequestListViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ConnectServerCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditAnnotationDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditComplexValue2Dlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.Common.EditComplexValueCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditComplexValueDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditMonitoredItemDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditReadValueIdDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditSubscriptionDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditValue2Ctrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditWriteValueDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EventFilterListViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EventListViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.GdsDiscoverServersDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryDataDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryDataListView.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.HistoryEventCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ReadRequestDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ReadRequestListViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectLocaleDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodeCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectNodeDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SetFilterOperatorDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SetTypeDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeDataDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeDataListViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SubscribeEventsDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.TypeFieldsListViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.UserNamePasswordDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewEventDetailsDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.WriteRequestDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.WriteRequestListViewCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerOnNetworkListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerOnNetworkListDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectHostCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoveredServerListDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.HostListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.HostListDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.GuiUtils.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditArrayDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.DiscoverServerDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditDataValueCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditDataValueDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EditValueCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EventListView.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ReferenceListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewNodeStateDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.BaseListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.BaseTreeCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ComplexValueEditDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.DataListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.DateTimeValueEditDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeIdCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.NodeIdValueEditDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.NumericValueEditDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ReferenceTypeCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SimpleValueEditDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.StringValueEditDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateListDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreTreeCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.CertificateStoreTreeDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectUrlsCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectProfileDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectProfileCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectCertificateStoreCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.SelectFileCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ViewCertificateDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.YesNoDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.ConfiguredServerListDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.EndpointSelectorCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerListCtrl.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.PseudoComServerListDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.UsernameTokenDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Client.Controls.Properties.Resources.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.Server.Controls.ClientHeaderBranding.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\_UA Client Controls.csproj.GenerateResource.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\_UA Client Controls.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.ClientControls.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\Opc.Ua.ClientControls.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\bin\Debug\Opc.Ua.ClientControls.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\bin\Debug\Opc.Ua.ClientControls.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Controls\obj\Debug\_UA Client Controls.csproj.CopyComplete
