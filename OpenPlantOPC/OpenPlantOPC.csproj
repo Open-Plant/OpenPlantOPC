@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -29,6 +29,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto">
@@ -60,6 +64,7 @@
     <Compile Include="WCF\OPCBrowserContract.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Icons\OpenPlant.ico" />
     <Content Include="License.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +79,7 @@
     <ProjectReference Include="..\OPCFoundation Classic\NetRcw\OPC COM RCW.csproj">
       <Project>{75a956d6-285b-46c9-b713-1500582f8c62}</Project>
       <Name>OPC COM RCW</Name>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\OPCFoundation Classic\XML Wrapper\OPC NET XML Wrapper.csproj">
       <Project>{82283125-79fd-4a52-948a-a928cc51c07b}</Project>
@@ -82,18 +88,22 @@
     <ProjectReference Include="..\OPCFoundation UA\Client\_UA Client Library.csproj">
       <Project>{42e9198c-ed2c-4bc8-b0a1-55d91d8f1e90}</Project>
       <Name>_UA Client Library</Name>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\OPCFoundation UA\Configuration\_UA Configuration Library.csproj">
       <Project>{8ab4cb8e-e216-425d-b600-350d0b6b59cd}</Project>
       <Name>_UA Configuration Library</Name>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\OPCFoundation UA\Controls\_UA Client Controls.csproj">
       <Project>{a247d2ee-14fc-463d-a9ba-6cff1ef22b7a}</Project>
       <Name>_UA Client Controls</Name>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\OPCFoundation UA\Core\_UA Core Library.csproj">
       <Project>{7543afcb-f5af-44af-83c9-23164474c1e9}</Project>
       <Name>_UA Core Library</Name>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

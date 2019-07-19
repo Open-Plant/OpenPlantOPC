@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Windows;
@@ -11,7 +13,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 using OpenPlant;
 
 namespace OpenPlantOPC
@@ -21,20 +22,12 @@ namespace OpenPlantOPC
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
-            Global.Product = new ProductDetails("OpenPlantOPC", null, Global.CommonAppDataDir + "\\Open-Plant OPC\\Admin");
-            Logger.ClearLogs();
-            Logger.EnableLogger();
-            Thread.Sleep(100);
-            Logger.Log("***************************************************");
-            Thread.Sleep(100);
-            Logger.Log("OPEN-PLANT OPC (Front End) STARTED");
-            Thread.Sleep(100);
-            Logger.Log("***************************************************");
-            Thread.Sleep(100);
+            Logger.DisableLogger();            
             this.Visibility = Visibility.Collapsed;
-            InitializeComponent();
+            InitializeComponent();            
         }
 
 
@@ -49,7 +42,7 @@ namespace OpenPlantOPC
             {
                 this.OPCClassic_Browser.ConnectToBackEndViaLocalHostPipe();
 
-                (wCFClient = new WCFClient<iOpenPlantOPCContract>("OpenPlantOPC", "")
+                (wCFClient = new WCFClient<iOpenPlantOPCContract>(Global.GetLocalPipeName(), "")
                 {
                     OnWCFConnected = (Channel, OPConnection) =>
                     {
@@ -110,7 +103,10 @@ namespace OpenPlantOPC
                 }
             }
         }
+
+
         
+
 
         private void OPC_Browser_OKClick(object sender, RoutedEventArgs e)
         {

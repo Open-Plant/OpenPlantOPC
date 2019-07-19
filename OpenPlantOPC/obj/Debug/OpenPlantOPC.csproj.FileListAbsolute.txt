@@ -39,3 +39,8 @@ C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Debug\OpenPlantOPC.csproj.C
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Debug\OpenPlantOPC.csproj.CopyComplete
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Debug\OpenPlantOPC.dll
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Debug\OpenPlantOPC.pdb
+C:\My\Open-Plant Suite\dll\Open-Plant\OpenPlantOPC\OpenPlantOPC.dll
+C:\My\Open-Plant Suite\dll\Open-Plant\OpenPlantOPC\OpenPlantOPC.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Debug\OpenPlantOPC.g.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPC.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPC.pdb

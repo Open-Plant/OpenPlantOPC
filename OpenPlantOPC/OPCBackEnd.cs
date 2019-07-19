@@ -39,7 +39,7 @@ namespace OpenPlantOPC
         {
             Logger.ClearLogs();
             if (!Global.Product.TryLoadConfigFile()) throw new CustomException("FATAL ERROR: Unable to load Config File '" + Global.Product.ConfigFilePath + "'");
-            OPCBackEnd.Config = (OPCBackEndConfig)Global.Product.Config;            
+            OPCBackEnd.Config = (OPCBackEndConfig)Global.Product.Config;               
             Logger.EnableLogger();
             Thread.Sleep(100);
             Logger.Log("***************************************************");
@@ -72,7 +72,7 @@ namespace OpenPlantOPC
             //*************************************************
             //   ENABLE NAMED PIPE FOR CONFIGURATION FRONT END
             //*************************************************
-            WCFHost_Pipe = new WCFHost<OpenPlantOPCContract, iOpenPlantOPCContract>(OPCBackEnd.Config.PipeName, "");
+            WCFHost_Pipe = new WCFHost<OpenPlantOPCContract, iOpenPlantOPCContract>(Global.GetLocalPipeName(), "");
             WCFHost_Pipe.Start();
 
 

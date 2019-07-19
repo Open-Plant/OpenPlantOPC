@@ -40,3 +40,9 @@ C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\bin\CSScriptLibrar
 C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\bin\KellermanSoftware.Compare-NET-Objects.xml
 C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\bin\OpenPlantOPC.dll
 C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\bin\OpenPlantOPC.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\bin\LocalPipeName.txt
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\LocalPipeName.txt
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlant.ico
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCSvc.exe.config
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCSvc.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCSvc.pdb
