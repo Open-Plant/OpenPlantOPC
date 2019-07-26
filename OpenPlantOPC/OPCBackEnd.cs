@@ -72,7 +72,8 @@ namespace OpenPlantOPC
             //*************************************************
             //   ENABLE NAMED PIPE FOR CONFIGURATION FRONT END
             //*************************************************
-            WCFHost_Pipe = new WCFHost<OpenPlantOPCContract, iOpenPlantOPCContract>(Global.GetLocalPipeName(), "");
+            string LocalPipeName = Global.GetLocalPipeName();
+            WCFHost_Pipe = new WCFHost<OpenPlantOPCContract, iOpenPlantOPCContract>(LocalPipeName, "");
             WCFHost_Pipe.Start();
 
 

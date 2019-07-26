@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1A5BD5C-1849-41D1-B6BD-CD1FD4F5D91A}</ProjectGuid>
+    <ProjectGuid>{D50DEF5E-0591-46FA-AAD2-E4254EEBF9DB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>OpenPlantOPC</RootNamespace>
     <AssemblyName>OpenPlantOPCSvc</AssemblyName>

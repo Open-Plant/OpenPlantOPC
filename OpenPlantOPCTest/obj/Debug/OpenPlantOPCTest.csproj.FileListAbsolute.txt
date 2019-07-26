@@ -1,8 +1,4 @@
-C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPC.BackEnd.Test.exe.config
-C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPC.BackEnd.Test.exe
-C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPC.BackEnd.Test.pdb
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OPCoreLib.dll
-C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPC.BackEnd.dll
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpcNetApi.Com.dll
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\Opc.Ua.Core.dll
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\Opc.Ua.Client.dll
@@ -15,7 +11,6 @@ C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\BouncyCastle.Cryp
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\CSScriptLibrary.dll
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\KellermanSoftware.Compare-NET-Objects.dll
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpcComRcw.dll
-C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPC.BackEnd.pdb
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OPCoreLib.pdb
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OPCoreLib.dll.config
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpcNetApi.Com.pdb
@@ -35,5 +30,11 @@ C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\fr\OpcNetApi.reso
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.csprojAssemblyReference.cache
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.csproj.CoreCompileInputs.cache
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.csproj.CopyComplete
-C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPC.BackEnd.Test.exe
-C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPC.BackEnd.Test.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPCTest.exe.config
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPCTest.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPCTest.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPC.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\OpenPlantOPC.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\bin\Debug\LocalPipeName.txt
