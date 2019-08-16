@@ -1,0 +1,7 @@
+C:\My\Open-Plant Suite\dll\OPC Foundation\OpcNetApi.Com.dll
+C:\My\Open-Plant Suite\dll\OPC Foundation\OpcNetApi.Com.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OPC NET COM Wrapper.csproj.CopyComplete
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OpcNetApi.Com.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\COM Wrapper\obj\Debug\OpcNetApi.Com.pdb

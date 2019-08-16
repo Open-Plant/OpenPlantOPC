@@ -11,6 +11,7 @@
     <Window.Resources>
         <ResourceDictionary >
             <OPLibWPF:CentreMessageStateNoMessageToOpacity1Else02Converter x:Key="CentreMessageStateNoMessageToOpacity1Else02Converter" />
+            <OPLibWPF:BoolORMultiConverter x:Key="BoolORMultiConverter" />
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
@@ -47,7 +48,31 @@
                                     </StackPanel>
                                 </StackPanel>
                             </OPLibWPF:OPBorder>
-                            <OPLibWPF:OPBorder Margin="3" Grid.Row="0" Grid.RowSpan="2"  Grid.Column="1">
+                            <OPLibWPF:OPBorder Margin="3" Grid.Row="1" Grid.Column="1">
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <OPLibWPF:OPH3 HorizontalAlignment="Center" Margin="0,0,0,2" Grid.Row="0" FontWeight="Bold">BASIC AUTHENTICATION</OPLibWPF:OPH3>
+                                    <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="0,5,0,0">
+                                        <StackPanel.IsEnabled>
+                                            <MultiBinding Converter="{StaticResource BoolORMultiConverter}">
+                                                <Binding Path="EnableAPI_Http" />
+                                                <Binding Path="EnableAPI_Https" />
+                                            </MultiBinding>
+                                        </StackPanel.IsEnabled>
+                                        <CheckBox IsChecked="{Binding RequireAPIBasicAuthentication}" VerticalAlignment="Center" Margin="0,0,0,10">
+                                            <TextBlock Margin="0,1,0,0">Enable Basic Authentication</TextBlock>
+                                        </CheckBox>
+                                        <StackPanel Orientation="Horizontal" Height="20">
+                                            <TextBlock Width="60" TextAlignment="Right" Margin="0,0,2,0" >Username:</TextBlock>
+                                            <TextBox IsEnabled="{Binding RequireAPIBasicAuthentication}" Width="100" Text="{Binding Username_ForAPIBasicAuthentication}"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0" Height="20">
+                                            <TextBlock Width="60" TextAlignment="Right" Margin="0,0,2,0" >Password:</TextBlock>
+                                            <PasswordBox IsEnabled="{Binding RequireAPIBasicAuthentication}" x:Name="pbHTTPSAuthentication" Width="100"></PasswordBox>
+                                        </StackPanel>
+                                </StackPanel>
+                                </StackPanel>
+                            </OPLibWPF:OPBorder>
+                            <OPLibWPF:OPBorder Margin="3" Grid.Row="0" Grid.Column="1">
                                 <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
                                     <OPLibWPF:OPH3 HorizontalAlignment="Center" Margin="0,0,0,2" Grid.Row="0" FontWeight="Bold">HTTPS SECURE API</OPLibWPF:OPH3>
                                     <StackPanel Height="25" HorizontalAlignment="Center" Orientation="Horizontal">
@@ -59,21 +84,6 @@
                                     </StackPanel>
                                     <TextBlock VerticalAlignment="Center" Margin="0,10,0,0">Subject Alternative Names (for SSL Cert)</TextBlock>
                                     <TextBox IsEnabled="{Binding EnableAPI_Https}" Text="{Binding SubjectAlternativeNames_ForHTTPSCert}" VerticalAlignment="Center" Margin="0,2,0,10"></TextBox>
-                                    <OPLibWPF:OPBorder IsEnabled="{Binding EnableAPI_Https}" Margin="0,5,0,0" Width="195">
-                                        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="10,20,10,20">
-                                            <CheckBox IsChecked="{Binding RequireAPIBasicAuthentication}" VerticalAlignment="Center" Margin="0,0,0,10">
-                                                <TextBlock Margin="0,1,0,0">Enable Basic Authentication</TextBlock>
-                                            </CheckBox>
-                                            <StackPanel Orientation="Horizontal" Height="20">
-                                                <TextBlock Width="60" TextAlignment="Right" Margin="0,0,2,0" >Username:</TextBlock>
-                                                <TextBox IsEnabled="{Binding RequireAPIBasicAuthentication}" Width="100" Text="{Binding Username_ForAPIBasicAuthentication}"></TextBox>
-                                            </StackPanel>
-                                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0" Height="20">
-                                                <TextBlock Width="60" TextAlignment="Right" Margin="0,0,2,0" >Password:</TextBlock>
-                                                <PasswordBox IsEnabled="{Binding RequireAPIBasicAuthentication}" x:Name="pbHTTPSAuthentication" Width="100"></PasswordBox>
-                                            </StackPanel>
-                                        </StackPanel>
-                                    </OPLibWPF:OPBorder>
                                 </StackPanel>
                             </OPLibWPF:OPBorder>
                             <OPLibWPF:OPBorder Margin="3" Grid.Row="1" Grid.Column="0">
@@ -94,7 +104,7 @@
                             </OPLibWPF:OPBorder>
                         </Grid>
                        <!--<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">sdsadasd</TextBlock>-->
-                        <OPLibWPF:CentreMessage Visibility="Visible" x:Name="cmSettings" MessageProcess="Saving..." MessageSuccess="Save Successful!" ShowDesignTimeMessageProcess="False" />
+                        <OPLibWPF:CentreMessage Visibility="Collapsed" x:Name="cmSettings" MessageProcess="Saving..." MessageSuccess="Save Successful!" ShowDesignTimeMessageProcess="False" />
                     </Grid>
                 </TabItem>
                 <TabItem Header="Test Browse OPC UA">

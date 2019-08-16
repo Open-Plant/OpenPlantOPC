@@ -40,14 +40,14 @@ namespace OpenPlantOPC
             };
 
 
-            //Check for Tag Inactivity every 20s. Every call by client will update it's activity.
-            //If tag has been inactive for more than 3x it's update interval, remove the tag from subscription (60s min inactivity time)
-            OPTimer CheckInactivityTimer = new OPTimer(20000);
+            //Check for Tag Inactivity every 5s. Every call by client will update it's activity.
+            //If tag has been inactive for more than 3x it's update interval, remove the tag from subscription (5s min inactivity time)
+            OPTimer CheckInactivityTimer = new OPTimer(5000);
             CheckInactivityTimer.Elapsed += (s) =>
             {
                 List<RegisteredTag> InactiveTags = this.RegisteredTags.Values.Where(RT => 
                 {
-                    if (RT.UpdateIntervalInMS <= 20000) return (DateTime.Now - RT.LastCalled).TotalMilliseconds > 60000;
+                    if (RT.UpdateIntervalInMS <= 5000) return (DateTime.Now - RT.LastCalled).TotalMilliseconds > 5000;
                     else return (DateTime.Now - RT.LastCalled).TotalMilliseconds > 3 * RT.UpdateIntervalInMS;
                 }).ToList();
                 foreach (RegisteredTag InactiveTag in InactiveTags)
@@ -390,74 +390,80 @@ namespace OpenPlantOPC
                 Opc.Da.Server ConnectedOPDAServer = ConnectToOPCServer(OPCURL);
                 if (ConnectedOPDAServer == null) return new Read_Result() { success = false, result = null, error = "Fail to Connect to OPC Server '" + OPCURL + "'" };
                 string[] ItemIdsSplit = ItemIds.Split(',');
-                int UpdateIntervalInMS = UpdateInterval.ToInt(1000);
-                foreach (string ItemId in ItemIdsSplit)
+                int LastIndex = ItemIdsSplit.Count() - 1;
+                if (ItemIdsSplit[LastIndex].IsNullOrEmpty()) ItemIdsSplit = ItemIdsSplit.RemoveAt(LastIndex);
+                if (ItemIdsSplit.Count() > 0)
                 {
-                    if (ItemId.IsNullOrWhiteSpace()) continue;
-                    //Check if the Item has already been subscribed 
-                    if (this.RegisteredTags.TryGetValue(ItemId, out RegisteredTag FoundRegisteredTag))
+                    int UpdateIntervalInMS = UpdateInterval.ToInt(1000);
+                    if (UpdateIntervalInMS < 250) UpdateIntervalInMS = 250;
+                    foreach (string ItemId in ItemIdsSplit)
                     {
-                        //Straight forward case, simply obtain data
-                        if (UpdateIntervalInMS >= FoundRegisteredTag.UpdateIntervalInMS)
+                        //if (ItemId.IsNullOrWhiteSpace()) continue;
+                        //Check if the Item has already been subscribed 
+                        if (this.RegisteredTags.TryGetValue(ItemId, out RegisteredTag FoundRegisteredTag))
                         {
-                            FoundRegisteredTag.LastCalled = DateTime.Now;
-                            Read_Result.result.Add(new DataValue(FoundRegisteredTag.Id, true, FoundRegisteredTag.TSUTC, FoundRegisteredTag.SourceTSUTC, FoundRegisteredTag.Value, FoundRegisteredTag.QualityOK));
-                            continue;
+                            //Straight forward case, simply obtain data
+                            if (UpdateIntervalInMS >= FoundRegisteredTag.UpdateIntervalInMS)
+                            {
+                                FoundRegisteredTag.LastCalled = DateTime.Now;
+                                Read_Result.result.Add(new DataValue(FoundRegisteredTag.Id, true, FoundRegisteredTag.TSUTC, FoundRegisteredTag.SourceTSUTC, FoundRegisteredTag.Value, FoundRegisteredTag.QualityOK));
+                                continue;
+                            }
+
+                            //If the Update Interval is more Frequent we need to remove the tag and subscribe it to a group which has higher update rate
+                            else
+                            {
+                                FoundRegisteredTag.UpdateIntervalInMS = UpdateIntervalInMS;
+                                Subscription SubscriptionWhereTagIs = ConnectedOPDAServer.Subscriptions.FindSubcriptionThatHasItem(ItemId, out Item ItemFound);
+                                if (SubscriptionWhereTagIs != null) SubscriptionWhereTagIs.RemoveItems(new ItemIdentifier[] { ItemFound }); //Remove From Subscription
+                            }
                         }
 
-                        //If the Update Interval is more Frequent we need to remove the tag and subscribe it to a group which has higher update rate
+
+                        //Tag WAS not found in Registered Tags Dictionary (or was removed due to update interval changed)
+                        //Check if there are any subscriptions which have same Update Interval and has room for items
+                        NewRegisteredTag = new RegisteredTag(ItemId, UpdateIntervalInMS);
+                        ItemValueResult readResult;
+                        Subscription SuitableSubscription = ConnectedOPDAServer.Subscriptions.FindSubcription(S => S.State.UpdateRate == UpdateIntervalInMS && S.Items.Count() < this.OPCGroupSizeLimit);
+                        if (SuitableSubscription != null)
+                        {
+                            //if a suitable subscription was found, Add item to this subscription
+                            ItemResult[] IR = SuitableSubscription.AddItems(new Item[] { new Item() { ItemName = ItemId } });
+                            if (IR.Count() <= 0) { Read_Result.result.Add(new DataValue(ItemId, false, DateTime.UtcNow, DateTime.MinValue, "Failed to Add Item to OPC Group", false)); continue; }
+                            if (IR[0].ResultID == ResultID.S_OK) readResult = SuitableSubscription.Read(new Item[] { IR[0] })[0];
+                            else { Read_Result.result.Add(new DataValue(ItemId, false, DateTime.UtcNow, DateTime.MinValue, IR[0].ResultID.ToString(), false)); continue; }
+                        }
                         else
                         {
-                            FoundRegisteredTag.UpdateIntervalInMS = UpdateIntervalInMS;
-                            Subscription SubscriptionWhereTagIs = ConnectedOPDAServer.Subscriptions.FindSubcriptionThatHasItem(ItemId, out Item ItemFound);
-                            if (SubscriptionWhereTagIs != null) SubscriptionWhereTagIs.RemoveItems(new ItemIdentifier[] { ItemFound }); //Remove From Subscription
+                            //If no Subscriptions found, create new Subscription
+                            ISubscription NewSubscription = ConnectedOPDAServer.CreateSubscription(new SubscriptionState() { UpdateRate = UpdateIntervalInMS });
+                            NewSubscription.DataChanged -= new DataChangedEventHandler(this.OnOPCSubscriptionDataChanged);
+                            NewSubscription.DataChanged += new DataChangedEventHandler(this.OnOPCSubscriptionDataChanged);
+                            ItemResult[] IR = NewSubscription.AddItems(new Item[] { new Item() { ItemName = ItemId } });
+                            if (IR.Count() <= 0) { Read_Result.result.Add(new DataValue(ItemId, false, DateTime.UtcNow, DateTime.MinValue, "Failed to Add Item to new OPC Group", false)); continue; }
+                            if (IR[0].ResultID == ResultID.S_OK) readResult = NewSubscription.Read(new Item[] { IR[0] })[0];
+                            else { Read_Result.result.Add(new DataValue(ItemId, false, DateTime.UtcNow, DateTime.MinValue, IR[0].ResultID.ToString(), false)); continue; }
                         }
-                    }
+
+                        NewRegisteredTag.TSUTC = DateTime.UtcNow;
+                        if (readResult.TimestampSpecified) NewRegisteredTag.SourceTSUTC = readResult.Timestamp; else NewRegisteredTag.SourceTSUTC = DateTime.UtcNow;
+                        if (readResult.Quality == Quality.Good)
+                        {
+                            NewRegisteredTag.QualityOK = true;
+                            if (readResult.Value is string || readResult.Value.IsNumericType()) NewRegisteredTag.Value = (IComparable)readResult.Value;
+                        }
+                        else
+                        {
+                            NewRegisteredTag.QualityOK = false;
+                            NewRegisteredTag.Value = null;
+                        }
+                        Read_Result.result.Add(new DataValue(NewRegisteredTag.Id, true, NewRegisteredTag.TSUTC, NewRegisteredTag.SourceTSUTC, NewRegisteredTag.Value, NewRegisteredTag.QualityOK));
 
 
-                    //Tag WAS not found in Registered Tags Dictionary (or was removed due to update interval changed)
-                    //Check if there are any subscriptions which have same Update Interval and has room for items
-                    NewRegisteredTag = new RegisteredTag(ItemId, UpdateIntervalInMS);
-                    ItemValueResult readResult;
-                    Subscription SuitableSubscription = ConnectedOPDAServer.Subscriptions.FindSubcription(S => S.State.UpdateRate == UpdateIntervalInMS && S.Items.Count() < this.OPCGroupSizeLimit);
-                    if (SuitableSubscription != null)
-                    {
-                        //if a suitable subscription was found, Add item to this subscription
-                        ItemResult[] IR = SuitableSubscription.AddItems(new Item[] { new Item() { ItemName = ItemId } });
-                        if (IR.Count() <= 0) { Read_Result.result.Add(new DataValue(ItemId, false, DateTime.UtcNow, DateTime.MinValue, "Failed to Add Item to OPC Group", false)); continue; }
-                        if (IR[0].ResultID == ResultID.S_OK) readResult = SuitableSubscription.Read(new Item[] { IR[0] })[0];
-                        else { Read_Result.result.Add(new DataValue(ItemId, false, DateTime.UtcNow, DateTime.MinValue, IR[0].ResultID.ToString(), false)); continue; }
+                        //Add New Tag to the Registered Tags
+                        NewRegisteredTag.LastCalled = DateTime.Now;
+                        RegisteredTags.Add(ItemId, NewRegisteredTag);
                     }
-                    else
-                    {
-                        //If no Subscriptions found, create new Subscription
-                        ISubscription NewSubscription = ConnectedOPDAServer.CreateSubscription(new SubscriptionState() { UpdateRate = UpdateIntervalInMS });
-                        NewSubscription.DataChanged -= new DataChangedEventHandler(this.OnOPCSubscriptionDataChanged);
-                        NewSubscription.DataChanged += new DataChangedEventHandler(this.OnOPCSubscriptionDataChanged);
-                        ItemResult[] IR = NewSubscription.AddItems(new Item[] { new Item() { ItemName = ItemId } });
-                        if (IR.Count() <= 0) { Read_Result.result.Add(new DataValue(ItemId, false, DateTime.UtcNow, DateTime.MinValue, "Failed to Add Item to new OPC Group", false)); continue; }
-                        if (IR[0].ResultID == ResultID.S_OK) readResult = NewSubscription.Read(new Item[] { IR[0] })[0];
-                        else { Read_Result.result.Add(new DataValue(ItemId, false, DateTime.UtcNow, DateTime.MinValue, IR[0].ResultID.ToString(), false)); continue; }                        
-                    }
-
-                    NewRegisteredTag.TSUTC = DateTime.UtcNow;
-                    if (readResult.TimestampSpecified) NewRegisteredTag.SourceTSUTC = readResult.Timestamp; else NewRegisteredTag.SourceTSUTC = DateTime.UtcNow;
-                    if (readResult.Quality == Quality.Good)
-                    {
-                        NewRegisteredTag.QualityOK = true;
-                        if (readResult.Value is string || readResult.Value.IsNumericType()) NewRegisteredTag.Value = (IComparable)readResult.Value;
-                    }
-                    else
-                    {
-                        NewRegisteredTag.QualityOK = false;
-                        NewRegisteredTag.Value = null;
-                    }
-                    Read_Result.result.Add(new DataValue(NewRegisteredTag.Id, true, NewRegisteredTag.TSUTC, NewRegisteredTag.SourceTSUTC, NewRegisteredTag.Value, NewRegisteredTag.QualityOK));
-
-
-                    //Add New Tag to the Registered Tags
-                    NewRegisteredTag.LastCalled = DateTime.Now;
-                    RegisteredTags.Add(ItemId, NewRegisteredTag);              
                 }
                 return Read_Result;
             }

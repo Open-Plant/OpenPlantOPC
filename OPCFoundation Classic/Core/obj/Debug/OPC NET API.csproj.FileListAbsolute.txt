@@ -1,0 +1,11 @@
+C:\My\Open-Plant Suite\dll\OPC Foundation\OpcNetApi.dll
+C:\My\Open-Plant Suite\dll\OPC Foundation\OpcNetApi.pdb
+C:\My\Open-Plant Suite\dll\OPC Foundation\fr\OpcNetApi.resources.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\Core\obj\Debug\Opc.Resources.Strings.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\Core\obj\Debug\Opc.Resources.Strings.fr.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\Core\obj\Debug\OPC NET API.csproj.GenerateResource.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\Core\obj\Debug\OPC NET API.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\Core\obj\Debug\fr\OpcNetApi.resources.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\Core\obj\Debug\OpcNetApi.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\Core\obj\Debug\OpcNetApi.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation Classic\Core\obj\Debug\OPC NET API.csprojAssemblyReference.cache

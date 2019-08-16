@@ -1,0 +1,9 @@
+C:\My\Open-Plant Suite\dll\OPC Foundation\Opc.Ua.Configuration.dll
+C:\My\Open-Plant Suite\dll\OPC Foundation\Opc.Ua.Configuration.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Configuration\obj\Debug\_UA Configuration Library.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Configuration\obj\Debug\Opc.Ua.Configuration.ExceptionDlg.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Configuration\obj\Debug\_UA Configuration Library.csproj.GenerateResource.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Configuration\obj\Debug\_UA Configuration Library.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Configuration\obj\Debug\_UA Configuration Library.csproj.CopyComplete
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Configuration\obj\Debug\Opc.Ua.Configuration.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Configuration\obj\Debug\Opc.Ua.Configuration.pdb

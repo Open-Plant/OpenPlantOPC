@@ -1,0 +1,6 @@
+C:\My\Open-Plant Suite\dll\OPC Foundation\Opc.Ua.Core.dll
+C:\My\Open-Plant Suite\dll\OPC Foundation\Opc.Ua.Core.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Core\obj\Debug\_UA Core Library.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Core\obj\Debug\Opc.Ua.Core.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Core\obj\Debug\Opc.Ua.Core.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Core\obj\Debug\_UA Core Library.csprojAssemblyReference.cache

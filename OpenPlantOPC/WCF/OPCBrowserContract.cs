@@ -55,32 +55,44 @@ namespace OpenPlantOPC
         public BrowseEntireNetwork_Classic_Result BrowseEntireNetwork_Classic()
         {
             OPCBackEnd.TotalAPICalls.Add(DateTime.UtcNow);
-            Logger.Log("'" + GetCallerIP() + "' requested to Browse Entire Network (OPC Classic)...");
-            return OPCBackEnd.OPCClassicBrowserEngine.BrowseEntireNetwork_Classic();
+            string CallerIP = GetCallerIP();
+            Logger.Log("'" + CallerIP + "' requested to Browse Entire Network (OPC Classic)...");
+            var Res = OPCBackEnd.OPCClassicBrowserEngine.BrowseEntireNetwork_Classic();
+            if (!Res.success) Logger.Log("ERROR: '" + CallerIP + "' request to Entire Network (OPC Classic) returned an error\r\n" + Res.error);
+            return Res;
         }
 
 
         public BrowseMachine_Result BrowseMachine_Classic(string Host)
         {
             OPCBackEnd.TotalAPICalls.Add(DateTime.UtcNow);
-            Logger.Log("'" + GetCallerIP() + "' requested to Browse Machine '" + Host + "' (OPC Classic)...");
-            return OPCBackEnd.OPCClassicBrowserEngine.BrowseMachine_Classic(Host);
+            string CallerIP = GetCallerIP();
+            Logger.Log("'" + CallerIP + "' requested to Browse Machine '" + Host + "' (OPC Classic)...");
+            var Res = OPCBackEnd.OPCClassicBrowserEngine.BrowseMachine_Classic(Host);
+            if (!Res.success) Logger.Log("ERROR: '" + CallerIP + "' request to Browse Machine '" + Host + "' (OPC Classic) returned an error\r\n" + Res.error);
+            return Res;
         }
 
 
         public BrowseGeneric_Result BrowseBranch_Classic(string OPCURL, string ItemId)
         {
             OPCBackEnd.TotalAPICalls.Add(DateTime.UtcNow);
-            Logger.Log("'" + GetCallerIP() + "' requested to Browse Branch '" + ItemId + "' for OPCURL '" + OPCURL + "' (OPC Classic)...");
-            return OPCBackEnd.OPCClassicBrowserEngine.BrowseBranch_Classic(OPCURL, ItemId);
+            string CallerIP = GetCallerIP();
+            Logger.Log("'" + CallerIP + "' requested to Browse Branch '" + ItemId + "' for OPCURL '" + OPCURL + "' (OPC Classic)...");
+            var Res = OPCBackEnd.OPCClassicBrowserEngine.BrowseBranch_Classic(OPCURL, ItemId);
+            if (!Res.success) Logger.Log("ERROR: '" + CallerIP + "' request to Browse Branch '" + ItemId + "' for OPCURL '" + OPCURL + "' (OPC Classic) returned an error\r\n" + Res.error);
+            return Res;
         }
 
 
         public BrowseTag_Classic_Result BrowseTag_Classic(string OPCURL, string ItemId)
         {
             OPCBackEnd.TotalAPICalls.Add(DateTime.UtcNow);
-            Logger.Log("'" + GetCallerIP() + "' requested to Browse Tag '" + ItemId + "' for OPCURL '" + OPCURL + "' (OPC Classic)...");
-            return OPCBackEnd.OPCClassicBrowserEngine.BrowseTag_Classic(OPCURL, ItemId);
+            string CallerIP = GetCallerIP();
+            Logger.Log("'" + CallerIP + "' requested to Browse Tag '" + ItemId + "' for OPCURL '" + OPCURL + "' (OPC Classic)...");
+            var Res = OPCBackEnd.OPCClassicBrowserEngine.BrowseTag_Classic(OPCURL, ItemId);
+            if (!Res.success) Logger.Log("ERROR: '" + CallerIP + "' request to Browse Tag '" + ItemId + "' for OPCURL '" + OPCURL + "' (OPC Classic) returned an error\r\n" + Res.error);
+            return Res;
         }
 
 
@@ -105,23 +117,32 @@ namespace OpenPlantOPC
         public BrowseMachine_Result BrowseLocalDiscoveryServer_UA(string Host, int Port)
         {
             OPCBackEnd.TotalAPICalls.Add(DateTime.UtcNow);
-            Logger.Log("'" + GetCallerIP() + "' requested to Browse Local Discovery Server for Host '" + Host + "', Port '" + Port + "' (OPC UA)...");
-            return OPCBackEnd.OPCUABrowserEngine.BrowseLocalDiscoveryServer_UA(Host, Port);
+            string CallerIP = GetCallerIP();
+            Logger.Log("'" + CallerIP + "' requested to Browse Local Discovery Server for Host '" + Host + "', Port '" + Port + "' (OPC UA)...");
+            var Res = OPCBackEnd.OPCUABrowserEngine.BrowseLocalDiscoveryServer_UA(Host, Port);
+            if (!Res.success) Logger.Log("ERROR: '" + CallerIP + "' reques to Browse Local Discovery Server for Host '" + Host + "', Port '" + Port + "' (OPC UA) returned an error\r\n" + Res.error);
+            return Res;
         }
 
         public BrowseGeneric_Result BrowseBranch_UA(string OPCURL, bool UseSecurity, string NodeId, string Username = "", string Password = "")
         {
             OPCBackEnd.TotalAPICalls.Add(DateTime.UtcNow);
-            Logger.Log("'" + GetCallerIP() + "' requested to Browse Branch '" + NodeId + "', OPCURL '" + OPCURL + "' (OPC UA, UseSecurity=" + UseSecurity + ", Username=" + Username +")...");
-            return OPCBackEnd.OPCUABrowserEngine.BrowseBranch_UA(OPCURL, UseSecurity, NodeId, Username, Password);
+            string CallerIP = GetCallerIP();
+            Logger.Log("'" + CallerIP + "' requested to Browse Branch '" + NodeId + "', OPCURL '" + OPCURL + "' (OPC UA, UseSecurity=" + UseSecurity + ", Username=" + Username +")...");
+            var Res = OPCBackEnd.OPCUABrowserEngine.BrowseBranch_UA(OPCURL, UseSecurity, NodeId, Username, Password);
+            if (!Res.success) Logger.Log("ERROR: '" + CallerIP + "' request to Browse Branch '" + NodeId + "', OPCURL '" + OPCURL + "' (OPC UA, UseSecurity=" + UseSecurity + ", Username=" + Username + ") returned an error\r\n" + Res.error);
+            return Res;
         }
 
 
         public BrowseAttribute_UA_Result BrowseAttribute_UA(string OPCURL, bool UseSecurity, string NodeId, string Username = "", string Password = "")
         {
             OPCBackEnd.TotalAPICalls.Add(DateTime.UtcNow);
-            Logger.Log("'" + GetCallerIP() + "' requested to Browse Attributes for '" + NodeId + "', OPCURL '" + OPCURL + "' (OPC UA, UseSecurity=" + UseSecurity + ", Username=" + Username + ")...");
-            return OPCBackEnd.OPCUABrowserEngine.BrowseAttribute_UA(OPCURL, UseSecurity, NodeId, Username, Password);
+            string CallerIP = GetCallerIP();
+            Logger.Log("'" + CallerIP + "' requested to Browse Attributes for '" + NodeId + "', OPCURL '" + OPCURL + "' (OPC UA, UseSecurity=" + UseSecurity + ", Username=" + Username + ")...");
+            var Res = OPCBackEnd.OPCUABrowserEngine.BrowseAttribute_UA(OPCURL, UseSecurity, NodeId, Username, Password);
+            if (!Res.success) Logger.Log("ERROR: '" + CallerIP + "' request to Browse Attributes for '" + NodeId + "', OPCURL '" + OPCURL + "' (OPC UA, UseSecurity=" + UseSecurity + ", Username=" + Username + ") returned an error\r\n" + Res.error);
+            return Res;
         }
 
 

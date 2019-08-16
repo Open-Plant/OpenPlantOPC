@@ -79,12 +79,12 @@ namespace OpenPlantOPC
             #endregion
 
 
-            OPTimer CheckInactivityTimer = new OPTimer(20000);
+            OPTimer CheckInactivityTimer = new OPTimer(5000);
             CheckInactivityTimer.Elapsed += (s) =>
             {
                 List<RegisteredTag> InactiveTags = this.RegisteredTags.Values.Where(RT =>
                 {
-                    if (RT.UpdateIntervalInMS <= 20000) return (DateTime.Now - RT.LastCalled).TotalMilliseconds > 60000;
+                    if (RT.UpdateIntervalInMS <= 5000) return (DateTime.Now - RT.LastCalled).TotalMilliseconds > 5000;
                     else return (DateTime.Now - RT.LastCalled).TotalMilliseconds > 3 * RT.UpdateIntervalInMS;
                 }).ToList();
                 foreach (RegisteredTag InactiveTag in InactiveTags)
@@ -216,7 +216,16 @@ namespace OpenPlantOPC
                             }
                         };
                         //oPCUAServer.Session.Browse(null, null, NID, 0u, BrowseDirection.Forward, ReferenceTypeIds.HierarchicalReferences, true, (uint)NodeClass.Variable | (uint)NodeClass.Object, out byte[] cp, out ReferenceDescriptionCollection refs);
-                        oPCUAServer.Session.Browse(null, null, 0, nodesToBrowse, out BrowseResultCollection BrowseResults, out DiagnosticInfoCollection DiagnosticInfos);
+                        BrowseResultCollection BrowseResults; DiagnosticInfoCollection DiagnosticInfos;
+                        try
+                        {
+                            oPCUAServer.Session.Browse(null, null, 0, nodesToBrowse, out BrowseResults, out DiagnosticInfos);
+                        }
+                        catch
+                        {
+                            oPCUAServer.Session?.Close();
+                            return BrowseBranch_UA(OPCURL, UseSecurity, NodeId, Username, Password);                            
+                        }
                         if (BrowseResults.Count != 1 || StatusCode.IsBad(BrowseResults[0].StatusCode))
                         {
                             string ExStr = BrowseResults[0].StatusCode.ToString();
@@ -420,95 +429,96 @@ namespace OpenPlantOPC
                     Read_Result Read_Result = new Read_Result(); RegisteredTag NewRegisteredTag;
                     if (NodeIds.IsNullOrWhiteSpace()) return Read_Result;
                     string[] NodeIdsSplit = NodeIds.Split(','); ILocalNode NodeIdObject = null;
-                    int UpdateIntervalInMS = UpdateInterval.ToInt(1000);
-                    foreach (string NodeId in NodeIdsSplit)
+                    int LastIndex = NodeIdsSplit.Count() - 1;
+                    if (NodeIdsSplit[LastIndex].IsNullOrEmpty()) NodeIdsSplit = NodeIdsSplit.RemoveAt(LastIndex);
+                    if (NodeIdsSplit.Count() > 0)
                     {
-                        if (NodeId.IsNullOrWhiteSpace()) continue;
-                        //Check if the Item has already been subscribed 
-                        if (this.RegisteredTags.TryGetValue(NodeId, out RegisteredTag FoundRegisteredTag))
+                        int UpdateIntervalInMS = UpdateInterval.ToInt(1000);
+                        if (UpdateIntervalInMS < 250) UpdateIntervalInMS = 250;
+                        foreach (string NodeId in NodeIdsSplit)
                         {
-                            //Fast and Straight forward case, simply obtain data. 
-                            if (UpdateIntervalInMS >= FoundRegisteredTag.UpdateIntervalInMS)
+                            //Check if the Item has already been subscribed 
+                            if (this.RegisteredTags.TryGetValue(NodeId, out RegisteredTag FoundRegisteredTag))
                             {
-                                FoundRegisteredTag.LastCalled = DateTime.Now;
-                                Read_Result.result.Add(new DataValue(FoundRegisteredTag.Id, true, FoundRegisteredTag.TSUTC, FoundRegisteredTag.SourceTSUTC, FoundRegisteredTag.Value, FoundRegisteredTag.QualityOK));
+                                //Fast and Straight forward case, simply obtain data. 
+                                if (UpdateIntervalInMS >= FoundRegisteredTag.UpdateIntervalInMS)
+                                {
+                                    FoundRegisteredTag.LastCalled = DateTime.Now;
+                                    Read_Result.result.Add(new DataValue(FoundRegisteredTag.Id, true, FoundRegisteredTag.TSUTC, FoundRegisteredTag.SourceTSUTC, FoundRegisteredTag.Value, FoundRegisteredTag.QualityOK));
+                                    continue;
+                                }
+
+                                //If the Update Interval is more Frequent we need to remove the tag and subscribe it to a group which has higher update rate
+                                else
+                                {
+                                    //NodeIdObject = oPCUAServer.Session.NodeCache.Find(new NodeId(NodeId)) as ILocalNode;
+                                    FoundRegisteredTag.UpdateIntervalInMS = UpdateIntervalInMS;
+                                    Subscription SubscriptionWhereTagIs = oPCUAServer.Session.Subscriptions.FindSubcriptionThatHasItem(NodeId, out MonitoredItem ItemFound);
+                                    if (SubscriptionWhereTagIs != null) SubscriptionWhereTagIs.RemoveItems(new MonitoredItem[] { ItemFound }); //Remove From Subscription                                
+                                }
+                            }
+
+                            //First check if the tag actually exists on the server. If it doesn't exist proceed to next tag
+                            if (NodeIdObject == null) NodeIdObject = oPCUAServer.Session.NodeCache.Find(new NodeId(NodeId)) as ILocalNode;
+                            if (NodeIdObject == null)
+                            {
+                                Read_Result.result.Add(new DataValue(NodeId, false, DateTime.UtcNow, DateTime.MinValue, null, false));
                                 continue;
                             }
 
-                            //If the Update Interval is more Frequent we need to remove the tag and subscribe it to a group which has higher update rate
+                            //Tag WAS NOT found in Registered Tags Dictionary (or was removed due to update interval changed)
+                            //Check if there are any subscriptions which have same Update Interval and has room for items
+                            NewRegisteredTag = new RegisteredTag(NodeId, UpdateIntervalInMS);
+                            Opc.Ua.DataValue readResult;
+                            Subscription SuitableSubscription = oPCUAServer.Session.Subscriptions.FindSubcription(S => S.PublishingInterval == UpdateIntervalInMS && S.MonitoredItemCount < this.OPCGroupSizeLimit);
+                            if (SuitableSubscription != null)
+                            {
+                                //if a suitable subscription was found, Add item to this subscription
+                                SuitableSubscription.AddItem(new MonitoredItem(SuitableSubscription.DefaultItem)
+                                {
+                                    DisplayName = SuitableSubscription.Session.NodeCache.GetDisplayText(new ReferenceDescription() { NodeId = NodeId }),
+                                    StartNodeId = NodeIdObject.NodeId
+                                });
+
+                                //After succesfully added Item to Existing Subscription, read the values of the item
+                                readResult = SuitableSubscription.Session.ReadValue(NodeIdObject.NodeId);
+                            }
                             else
                             {
-                                //NodeIdObject = oPCUAServer.Session.NodeCache.Find(new NodeId(NodeId)) as ILocalNode;
-                                FoundRegisteredTag.UpdateIntervalInMS = UpdateIntervalInMS;
-                                Subscription SubscriptionWhereTagIs = oPCUAServer.Session.Subscriptions.FindSubcriptionThatHasItem(NodeId, out MonitoredItem ItemFound);
-                                if (SubscriptionWhereTagIs != null) SubscriptionWhereTagIs.RemoveItems(new MonitoredItem[] { ItemFound }); //Remove From Subscription                                
+                                //If no Subscriptions found, create new Subscription
+                                Subscription NewSubscription = new Subscription(oPCUAServer.Session.DefaultSubscription) { DisplayName = Guid.NewGuid().ToString(), PublishingInterval = UpdateIntervalInMS };
+                                oPCUAServer.Session.AddSubscription(NewSubscription);
+                                NewSubscription.AddItem(new MonitoredItem(NewSubscription.DefaultItem)
+                                {
+                                    DisplayName = NewSubscription.Session.NodeCache.GetDisplayText(new ReferenceDescription() { NodeId = NodeId }),
+                                    StartNodeId = NodeIdObject.NodeId
+                                });
+                                NewSubscription.FastDataChangeCallback = FastDataChangeNotificationEventHandler;
+                                NewSubscription.Create();
+                                readResult = NewSubscription.Session.ReadValue(NodeIdObject.NodeId);
                             }
-                        }
 
-                        //First check if the tag actually exists on the server. If it doesn't exist proceed to next tag
-                        if (NodeIdObject == null) NodeIdObject = oPCUAServer.Session.NodeCache.Find(new NodeId(NodeId)) as ILocalNode;
-                        if (NodeIdObject == null)
-                        {
-                            Read_Result.result.Add(new DataValue(NodeId, false, DateTime.UtcNow, DateTime.MinValue, null, false));
-                            continue;
-                        }
-
-                        //Tag WAS NOT found in Registered Tags Dictionary (or was removed due to update interval changed)
-                        //Check if there are any subscriptions which have same Update Interval and has room for items
-                        NewRegisteredTag = new RegisteredTag(NodeId, UpdateIntervalInMS);
-                        Opc.Ua.DataValue readResult;
-                        Subscription SuitableSubscription = oPCUAServer.Session.Subscriptions.FindSubcription(S => S.PublishingInterval == UpdateIntervalInMS && S.MonitoredItemCount < this.OPCGroupSizeLimit);
-                        if (SuitableSubscription != null)
-                        {
-                            //if a suitable subscription was found, Add item to this subscription
-                            SuitableSubscription.AddItem(new MonitoredItem(SuitableSubscription.DefaultItem)
+                            //Use Server TimeStamp if source time stamp is very old (can be due to faulty device)
+                            NewRegisteredTag.TSUTC = DateTime.UtcNow;
+                            NewRegisteredTag.SourceTSUTC = readResult.SourceTimestamp;
+                            if (StatusCode.IsGood(readResult.StatusCode))
                             {
-                                DisplayName = SuitableSubscription.Session.NodeCache.GetDisplayText(new ReferenceDescription() { NodeId = NodeId }),
-                                StartNodeId = NodeIdObject.NodeId,
-                                //TagName = NewTag.TagName,
-                                //Parameter = NewTag.Parameter
-                            });
-
-                            //After succesfully added Item to Existing Subscription, read the values of the item
-                            readResult = SuitableSubscription.Session.ReadValue(NodeIdObject.NodeId);
-                        }
-                        else
-                        {
-                            //If no Subscriptions found, create new Subscription
-                            Subscription NewSubscription = new Subscription(oPCUAServer.Session.DefaultSubscription) { DisplayName = Guid.NewGuid().ToString(), PublishingInterval = UpdateIntervalInMS };
-                            oPCUAServer.Session.AddSubscription(NewSubscription);
-                            NewSubscription.AddItem(new MonitoredItem(NewSubscription.DefaultItem)
+                                NewRegisteredTag.QualityOK = true;
+                                if (readResult.Value is string || readResult.Value.IsNumericType()) NewRegisteredTag.Value = (IComparable)readResult.Value;
+                            }
+                            else
                             {
-                                DisplayName = NewSubscription.Session.NodeCache.GetDisplayText(new ReferenceDescription() { NodeId = NodeId }),
-                                StartNodeId = NodeIdObject.NodeId,
-                                //TagName = NewTag.TagName,
-                                //Parameter = NewTag.Parameter
-                            });
-                            NewSubscription.FastDataChangeCallback = FastDataChangeNotificationEventHandler;
-                            NewSubscription.Create();
-                            readResult = NewSubscription.Session.ReadValue(NodeIdObject.NodeId);
-                        }
-
-                        //Use Server TimeStamp if source time stamp is very old (can be due to faulty device)
-                        NewRegisteredTag.TSUTC = DateTime.UtcNow;
-                        NewRegisteredTag.SourceTSUTC = readResult.SourceTimestamp;
-                        if (StatusCode.IsGood(readResult.StatusCode))
-                        {
-                            NewRegisteredTag.QualityOK = true;
-                            if (readResult.Value is string || readResult.Value.IsNumericType()) NewRegisteredTag.Value = (IComparable)readResult.Value;
-                        }
-                        else
-                        {
-                            NewRegisteredTag.QualityOK = false;
-                            NewRegisteredTag.Value = null;
-                        }
-                        Read_Result.result.Add(new DataValue(NewRegisteredTag.Id, true, NewRegisteredTag.TSUTC, NewRegisteredTag.SourceTSUTC, NewRegisteredTag.Value, NewRegisteredTag.QualityOK));
+                                NewRegisteredTag.QualityOK = false;
+                                NewRegisteredTag.Value = null;
+                            }
+                            Read_Result.result.Add(new DataValue(NewRegisteredTag.Id, true, NewRegisteredTag.TSUTC, NewRegisteredTag.SourceTSUTC, NewRegisteredTag.Value, NewRegisteredTag.QualityOK));
 
 
-                        //Add New Tag to the Registered Tags
-                        NewRegisteredTag.LastCalled = DateTime.Now;
-                        RegisteredTags.Add(NodeId, NewRegisteredTag);
-                    } //Go to next tag
+                            //Add New Tag to the Registered Tags
+                            NewRegisteredTag.LastCalled = DateTime.Now;
+                            RegisteredTags.Add(NodeId, NewRegisteredTag);
+                        } //Go to next tag
+                    }
                     return Read_Result;
                 }
                 else

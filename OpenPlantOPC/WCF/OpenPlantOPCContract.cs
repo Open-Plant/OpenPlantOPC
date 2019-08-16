@@ -83,6 +83,7 @@ namespace OpenPlantOPC
                 }
                 if (ChangeOccured)
                 {
+                    OPCBackEnd.Config = OPCBackEndConfig;
                     Global.Product.Config = OPCBackEndConfig;
                     Global.Product.Config.TrySaveConfigFile();
                     Logger.Log("Successfully saved Open-Plant OPC Back End Configuration at '" + Global.Product.ConfigFilePath + "'");

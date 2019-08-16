@@ -1,0 +1,13 @@
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.csproj.CopyComplete
+C:\My\Open-Plant Suite\OpenPlantOPC\LocalPipeName.txt
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest.exe.config
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Debug\OpenPlantOPCTest.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\LocalPipeName.txt
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCTest.exe.config
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCTest.exe
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCTest.pdb

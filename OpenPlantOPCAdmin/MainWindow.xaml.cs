@@ -40,9 +40,10 @@ namespace OpenPlantOPC
             //Connect to Open Plant OPC Service
             ThreadPool.QueueUserWorkItem(delegate
             {
-                this.OPCClassic_Browser.ConnectToBackEndViaLocalHostPipe();
-
-                (wCFClient = new WCFClient<iOpenPlantOPCContract>(Global.GetLocalPipeName(), "")
+                string LocalPipeName = Global.GetLocalPipeName();
+                this.OPCClassic_Browser.ConnectToBackEndViaLocalHostPipe(LocalPipeName);
+                this.OPCUA_Browser.ConnectToBackEndViaLocalHostPipe(LocalPipeName);
+                (wCFClient = new WCFClient<iOpenPlantOPCContract>(LocalPipeName, "")
                 {
                     OnWCFConnected = (Channel, OPConnection) =>
                     {
@@ -69,13 +70,13 @@ namespace OpenPlantOPC
                         {
                             if (WCFChannel.TryGetLogs(LastConsoleLogRead, out List<OpenPlant.LogStruct> LogList))
                             {
-                                LogConsole.AddNewLogs(LogList);
+                                LogConsole.AddLogs(LogList);
                                 LastConsoleLogRead = LogList.Last().TimeStampInUTC;
                             }
                         }
                         catch { }
                     }
-                    Thread.Sleep(500);
+                    Thread.Sleep(1000);
                 }
             });
         }

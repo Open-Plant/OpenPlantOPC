@@ -1,0 +1,6 @@
+C:\My\Open-Plant Suite\dll\OPC Foundation\Opc.Ua.Client.dll
+C:\My\Open-Plant Suite\dll\OPC Foundation\Opc.Ua.Client.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Client\obj\Debug\_UA Client Library.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Client\obj\Debug\_UA Client Library.csproj.CopyComplete
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Client\obj\Debug\Opc.Ua.Client.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OPCFoundation UA\Client\obj\Debug\Opc.Ua.Client.pdb
