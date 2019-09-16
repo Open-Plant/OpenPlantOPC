@@ -424,12 +424,6 @@
         "Entry"
         {
         "MsmKey" = "8:_ECE88C0F180232124B7BE8B1EC773E6D"
-        "OwnerKey" = "8:_3FD11AA69F88702A508567016A3981FF"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_ECE88C0F180232124B7BE8B1EC773E6D"
         "OwnerKey" = "8:_CB530822E6CE1A640C88EC8C7A546CAD"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -453,6 +447,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_ECE88C0F180232124B7BE8B1EC773E6D"
+        "OwnerKey" = "8:_3FD11AA69F88702A508567016A3981FF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F04C603D053352CF0DC1EC5CF5B0F2CF"
         "OwnerKey" = "8:_9FCDC4AE80F84E099D30E101CBCC2DA9"
         "MsmSig" = "8:_UNDEFINED"
@@ -461,6 +461,42 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_0C06982114794C60B7125DC02E7222C1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9FCDC4AE80F84E099D30E101CBCC2DA9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_CB530822E6CE1A640C88EC8C7A546CAD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F04C603D053352CF0DC1EC5CF5B0F2CF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_B71C8B5E7F300D11AEEEAFAF86E1C024"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6FCBC3C1CDD0E7525B1E76A4CBB285E4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3EF3141C17844100AA20C1B4E22918B3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -545,42 +581,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_9C3D930FA722E69A2FBD657AC60D6EC2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9FCDC4AE80F84E099D30E101CBCC2DA9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CB530822E6CE1A640C88EC8C7A546CAD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F04C603D053352CF0DC1EC5CF5B0F2CF"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B71C8B5E7F300D11AEEEAFAF86E1C024"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6FCBC3C1CDD0E7525B1E76A4CBB285E4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3EF3141C17844100AA20C1B4E22918B3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1659,13 +1659,13 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Open-Plant OPC"
         "ProductCode" = "8:{4C6E90B8-163A-4DC8-8A2B-1DA95A57159A}"
-        "PackageCode" = "8:{E80CF8C6-AFCC-4204-8D39-980196749113}"
+        "PackageCode" = "8:{54EAE574-EC0E-4543-87B4-C607E2349D08}"
         "UpgradeCode" = "8:{F4B8260E-D51E-4DBD-991A-F66B5CB525EF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:TRUE"
+        "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Open-Plant"
         "ARPHELPTELEPHONE" = "8:"
@@ -2125,7 +2125,7 @@
                             "ContextData" = "8:1;True=1;False=0"
                             "Attributes" = "3:0"
                             "Setting" = "3:0"
-                            "Value" = "3:0"
+                            "Value" = "3:1"
                             "DefaultValue" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
                             }

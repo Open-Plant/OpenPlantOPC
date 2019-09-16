@@ -1,0 +1,8 @@
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\LocalPipeName.txt
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCTest.exe.config
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCTest.exe
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCTest.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Release\OpenPlantOPCTest.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Release\OpenPlantOPCTest.csproj.CopyComplete
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Release\OpenPlantOPCTest.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCTest\obj\Release\OpenPlantOPCTest.pdb

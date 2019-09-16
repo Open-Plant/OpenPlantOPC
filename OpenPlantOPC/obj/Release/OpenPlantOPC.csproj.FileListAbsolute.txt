@@ -1,0 +1,8 @@
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\OpenPlantOPC.dll
+C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\OpenPlantOPC.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Release\OpenPlantOPC.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Release\OpenPlantOPC.g.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Release\OpenPlantOPC.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Release\OpenPlantOPC.csproj.CopyComplete
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Release\OpenPlantOPC.dll
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPC\obj\Release\OpenPlantOPC.pdb

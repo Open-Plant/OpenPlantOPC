@@ -4,7 +4,6 @@ C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\OpenPlantOPCAdmin.pdb
 C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCAdmin.exe.config
 C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCAdmin.exe
 C:\My\Open-Plant Suite\dll\Open-Plant\OPOPC\TestBin\OpenPlantOPCAdmin.pdb
-C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\OpenPlantOPCAdmin.csprojAssemblyReference.cache
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\App.baml
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\MainWindow.g.cs
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\App.g.cs
@@ -19,3 +18,10 @@ C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\OpenPlantOPCAdmi
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\OpenPlantOPCAdmin.csproj.CopyComplete
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\OpenPlantOPCAdmin.exe
 C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\OpenPlantOPCAdmin.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\OpenPlantOPCAdmin\obj\Debug\OpenPlantOPCAdmin.csprojAssemblyReference.cache
+C:\My\Open-Plant Suite\bin\OpenPlantOPCAdmin.exe.config
+C:\My\Open-Plant Suite\bin\OpenPlantOPCAdmin.exe
+C:\My\Open-Plant Suite\bin\OpenPlantOPCAdmin.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCAdmin.exe.config
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCAdmin.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCAdmin.pdb

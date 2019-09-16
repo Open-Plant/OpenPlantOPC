@@ -1,0 +1,11 @@
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\LocalPipeName.txt
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlant.ico
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCSvc.exe.config
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCSvc.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\bin\OpenPlantOPCSvc.pdb
+C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\obj\Release\OpenPlant.ProjectInstaller.resources
+C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\obj\Release\OpenPlantOPCSvc.csproj.GenerateResource.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\obj\Release\OpenPlantOPCSvc.csproj.CoreCompileInputs.cache
+C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\obj\Release\OpenPlantOPCSvc.csproj.CopyComplete
+C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\obj\Release\OpenPlantOPCSvc.exe
+C:\My\Open-Plant Suite\OpenPlantOPC\Installer\OpenPlantOPCSvc\obj\Release\OpenPlantOPCSvc.pdb
